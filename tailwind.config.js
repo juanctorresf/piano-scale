@@ -7,10 +7,14 @@ export default {
     ],
     theme: {
         extend: {
-        spacing: {
-            '21': '5.12rem',
-            '45': '11.19rem'
-        }
+            spacing: {
+                '21': '5.12rem',
+                '45': '11.19rem'
+            },
+            colors: {
+            'gray-10': '#181818',
+            // 'white': '#FFFFFF'
+            },
         },
         fontSize: {
             sm: '0.8rem',
@@ -25,9 +29,6 @@ export default {
         },
         fontFamily: {
             body: ["Helvetica", "sans-serif"]
-        },
-        colors: {
-        'gray-10': '#181818'
         },
         backgroundImage: {
         'hero-image-android': "url('./src/assets/shape-android.svg')",

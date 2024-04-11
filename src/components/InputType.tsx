@@ -6,16 +6,16 @@ interface inputProps {
     inputType: string[];
     labelName: string;
 }
-  
+
 export const InputType:React.FC<inputProps> = ({ inputType, labelName }) => {
 
     const handleTypeStore = useScaleStore( state => state.changeType );
     const typeValueStore = useScaleStore( state => state.type )
     
-    let listTypes = inputType.map( (input) => {
+    const listTypes = inputType.map( (input) => {
         return <option key={input} value={input}>{ input }</option>
     });
-  
+
     return (
         <div className="mb-7 w-11/12 flex flex-col items-center">
             <label 
@@ -37,4 +37,3 @@ export const InputType:React.FC<inputProps> = ({ inputType, labelName }) => {
         </div>
     )
 }
-  

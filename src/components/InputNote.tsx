@@ -4,12 +4,12 @@ interface inputProps  {
     inputNote: string[];
     labelName: string;
 }
-  
+
 export const InputNote:React.FC<inputProps> = ({ inputNote, labelName }) => {
     const handleNoteStore = useScaleStore( state => state.changeNote );
     const noteValueStore = useScaleStore( state => state.note);
 
-    let listNotes = inputNote.map( (input) => {
+    const listNotes = inputNote.map( (input) => {
         return <option key={input} value={input}>{ input }</option>
     });
 
@@ -34,4 +34,3 @@ export const InputNote:React.FC<inputProps> = ({ inputNote, labelName }) => {
         </div>
     )
 }
-  
