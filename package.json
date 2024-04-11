@@ -1,12 +1,12 @@
 {
-  "name": "musicscale",
+  "name": "pianoscale",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint ./src",
+    "lint": "eslint --ext .ts, ./src",
     "lint:debug": "eslint ./src --debug",
     "lint:fix": "eslint ./src --fix",
     "preview": "vite preview"

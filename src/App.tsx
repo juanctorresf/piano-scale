@@ -13,11 +13,10 @@ export const App = () => {
     const modalityStore = useScaleStore( state => state.modality );    
 
     return (
-        
             <main>
-                <h1 className=" text-5xl md:text-6xl text-center text-gray-10 m-0 pt-21 md:pt-45 mb-9">MusicScale</h1>
+                <h1 className="m-0 text-5xl text-center md:text-6xl text-gray-10 pt-21 md:pt-45 mb-9">MusicScale</h1>
 
-                <div className="max-w-5xl flex flex-col items-center lg:flex-row lg:mx-auto">
+                <div className="flex flex-col items-center max-w-5xl lg:flex-row lg:mx-auto">
                     <InputNote inputNote={ notes } labelName="Tone"/>
                     <InputModality inputModality={ modality } labelName="Modality" /> 
                     { modalityStore === "Major" && <InputType inputType={ typeMajors } labelName="Type"/> }
