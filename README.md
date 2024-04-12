@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+# Piano Scale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Piano Scale es una aplicación desarrollada utilizando React con TypeScript y Tailwind CSS, junto con Zustand para el manejo del estado. Esta aplicación tiene como objetivo proporcionar una herramienta interactiva para visualizar diferentes escalas musicales en el piano, permitiendo a los usuarios explorar diversas combinaciones de notas, modalidades y tipos de escalas.
 
-Currently, two official plugins are available:
+## Instalación
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clona este repositorio en tu máquina local:
 
-## Expanding the ESLint configuration
+   ```
+   git clone https://github.com/juanctorresf/piano-scale.git
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Navega hasta el directorio del proyecto:
 
-- Configure the top-level `parserOptions` property like this:
+   ```
+   cd piano-scale
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+3. Instala las dependencias utilizando npm:
+
+   ```
+   npm install
+   ```
+
+## Uso
+
+Una vez instaladas las dependencias, puedes iniciar la aplicación ejecutando el siguiente comando:
+
+```
+npm start
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Esto iniciará la aplicación en modo de desarrollo. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para verla en acción.
+
+## Características
+
+- **Visualización de Escalas:** Explora una amplia variedad de escalas musicales en el teclado del piano.
+- **Selección Personalizada:** Elige la nota base, la modalidad y el tipo de escala para visualizar diferentes combinaciones.
+- **Interfaz Intuitiva:** Diseño limpio y fácil de usar, ideal para músicos de todos los niveles.
+
+## Tecnologías Utilizadas
+
+- **React:** Biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript:** Superconjunto de JavaScript que agrega tipado estático a la sintaxis del lenguaje.
+- **Tailwind CSS:** Framework de CSS utilitario para construir rápidamente interfaces de usuario.
+- **Zustand:** Librería de gestión de estado sencillo y eficiente para aplicaciones React.
+
+## Contribución
+
+Si deseas contribuir a este proyecto, ¡serás bienvenido! Siéntete libre de abrir un "issue" para discutir nuevas características o enviar "pull requests" con tus contribuciones.
+
+## Licencia
+
+Este proyecto está bajo la [Licencia MIT](LICENSE).
+
+---
