@@ -9,31 +9,31 @@ interface inputProps {
 
 export const InputType:React.FC<inputProps> = ({ inputType, labelName }) => {
 
-    const handleTypeStore = useScaleStore( state => state.changeType );
-    const typeValueStore = useScaleStore( state => state.type )
-    
-    const listTypes = inputType.map( (input) => {
-        return <option key={input} value={input}>{ input }</option>
-    });
+	const handleTypeStore = useScaleStore( state => state.changeType );
+	const typeValueStore = useScaleStore( state => state.type )
 
-    return (
-        <div className="mb-7 w-11/12 flex flex-col items-center">
-            <label 
-                htmlFor={labelName} 
-                className="block text-left uppercase font-bold mb-2 text-gray-10"
-            >
-                { labelName }
-            </label>
+	const listTypes = inputType.map( (input) => {
+		return <option key={input} value={input}>{ input }</option>
+	});
 
-            <select 
-                id={labelName} 
-                className="block py-4 pl-3 text-sm-2 font-medium leading-5 w-full max-w-80"
-                value={ typeValueStore }
-                onChange={ e => handleTypeStore(e.target.value) }
-            >
-                <option disabled value={"No value"}>-- Select type --</option>
-                { listTypes }
-            </select>
-        </div>
-    )
+	return (
+		<div className="flex flex-col items-center w-11/12 mb-7">
+			<label 
+				htmlFor={labelName} 
+				className="block mb-2 font-bold text-left uppercase text-gray-10"
+			>
+				{ labelName }
+			</label>
+
+			<select 
+				id={labelName} 
+				className="block w-full py-4 pl-3 font-medium leading-5 text-sm-2 max-w-80"
+				value={ typeValueStore }
+				onChange={ e => handleTypeStore(e.target.value) }
+			>
+				<option disabled value={"No value"}>-- Select type --</option>
+				{ listTypes }
+			</select>
+		</div>
+	) 
 }

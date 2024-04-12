@@ -4,8 +4,8 @@ const typeMajors:string[] = [ "Ionian", "Bebop", "Bulgarian", "Hexatonic", "Pent
 const typeMinors:string[] = [ "Harmonic", "Hungarian", "Melodic", "Natural", "Neapolitan", "Pentatonic", "Polymode", "Romanian" ];
 
 export {
-    notes,
-    modality,
-    typeMajors,
-    typeMinors
+	notes,
+	modality,
+	typeMajors,
+	typeMinors
 }
