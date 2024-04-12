@@ -51,6 +51,6 @@ Si deseas contribuir a este proyecto, ¡serás bienvenido! Siéntete libre de ab
 
 ## Licencia
 
-Este proyecto está bajo la [Licencia MIT](LICENSE).
+Este proyecto está bajo la [Licencia MIT](https://github.com/juanctorresf/piano-scale/blob/main/LICENSE.md).
 
 ---
