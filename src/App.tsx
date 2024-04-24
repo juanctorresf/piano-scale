@@ -6,7 +6,7 @@ import { InputNote } from "./components/InputNote";
 import { InputType } from "./components/InputType";
 
 import { modality, notes, typeMajors,typeMinors } from "./global/ScaleInfo"
-import { Key } from "./components/Key";
+import { KeyPiano } from "./components/Key";
 import { keys as keys } from "./global/KeyData";
 
 
@@ -36,10 +36,10 @@ export const App = () => {
 				{ modalityStore === "Minor" && <InputType inputType={ typeMinors } labelName="Type"/> }
 			</div>
 
-			<div className="flex flex-row justify-center">
+			<div className="flex flex-row justify-center my-7">
 				{
 					keys.map( key => (
-						<Key key={ key } note={ key } /* isPlaying={ false } *//>
+						<KeyPiano key={ key } note={ key } />
 					))
 				}
 			</div>
