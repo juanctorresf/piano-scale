@@ -7,9 +7,9 @@ interface inputProps {
 
 export const InputModality:React.FC<inputProps> = ({ inputModality, labelName }) => {
 
+	// Store
 	const handleModalityStore = useScaleStore( state => state.changeModality );
 	const modalityValueStore = useScaleStore( state => state.modality )
-
 	const handleTypeStore = useScaleStore( state => state.changeType );
 
 	const handleModalityType = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -22,17 +22,17 @@ export const InputModality:React.FC<inputProps> = ({ inputModality, labelName })
 	});
 
 	return (
-		<div className="mb-7 w-11/12 flex flex-col items-center">
+		<div className="flex flex-col items-center w-11/12 mb-7">
 			<label 
 				htmlFor={labelName} 
-				className="block text-left uppercase font-bold mb-2 text-gray-10"
+				className="block mb-2 font-bold text-left uppercase text-gray-10"
 			>
 				{ labelName }
 			</label>
 
 			<select 
 				id={labelName} 
-				className="block py-4 pl-3 text-sm-2 font-medium leading-5 w-full max-w-80"
+				className="select-input"
 				value={ modalityValueStore }
 				onChange={ handleModalityType }
 			>

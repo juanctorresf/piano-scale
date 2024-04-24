@@ -24,7 +24,7 @@ export const InputNote:React.FC<inputProps> = ({ inputNote, labelName }) => {
 
 			<select 
 				id={labelName} 
-				className="block w-full py-4 pl-3 font-medium leading-5 text-sm-2 max-w-80"
+				className="select-input"
 				value={ noteValueStore }
 				onChange={ e => handleNoteStore(e.target.value) }
 			>
