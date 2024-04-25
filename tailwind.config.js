@@ -13,7 +13,6 @@ export default {
             },
             colors: {
             'gray-10': '#181818',
-            // 'white': '#FFFFFF'
             },
         },
         fontSize: {
