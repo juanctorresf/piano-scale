@@ -1,6 +1,6 @@
 // import { useState } from "react";
 // import { useEffect } from "react";
-import { useScaleStore } from "../store/scaleStore";
+import { useScaleStore } from "../../store/scaleStore";
 
 interface inputProps {
     inputType: string[];

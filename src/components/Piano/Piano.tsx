@@ -1,4 +1,4 @@
-import { keys } from "../global/KeyData"
+import { keys } from "../../global/KeyData"
 import { KeyPiano } from "./Key"
 
 

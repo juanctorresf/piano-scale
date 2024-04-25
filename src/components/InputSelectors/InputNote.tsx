@@ -1,4 +1,4 @@
-import { useScaleStore } from "../store/scaleStore";
+import { useScaleStore } from "../../store/scaleStore";
 
 interface inputProps  {
 	inputNote: string[];

@@ -1,6 +1,6 @@
-import { Piano } from "./components/Piano";
-import { Selectors } from "./components/Selectors";
-import { Header } from "./components/Header";
+import { Piano } from "./components/Piano/Piano";
+import { Selectors } from "./components/InputSelectors/Selectors";
+import { Header } from "./components/Header/Header";
 
 
 export const App = () => {

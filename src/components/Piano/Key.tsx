@@ -15,10 +15,11 @@ export const KeyPiano: React.FC<PrompDataKey> = ({ note }) => {
 				})
 			}
 		>
-			<div className={ clsx(
-				"relative mt-20 text-sm text-black uppercase",
-				"lg:text-base lg:mt-44"
-			)}>
+			<div 
+				className={ clsx(
+					"relative mt-20 text-sm text-black uppercase",
+					"lg:text-base lg:mt-44")
+			}>
 				{ note.length <= 2 ? note : null }
 			</div>
 		</div>
