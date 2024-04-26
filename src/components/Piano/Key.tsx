@@ -14,6 +14,7 @@ export const KeyPiano: React.FC<PrompDataKey> = ({ note }) => {
 				"black-key" : note.length > 2,
 				})
 			}
+			id={ note }
 		>
 			<div 
 				className={ clsx(
