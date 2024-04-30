@@ -3,14 +3,13 @@
 import { useScaleStore } from "../../store/scaleStore";
 
 interface inputProps {
-    inputType: string[];
-    labelName: string;
+	inputType: string[];
+	labelName: string;
 }
 
 export const InputType:React.FC<inputProps> = ({ inputType, labelName }) => {
-
-	const handleTypeStore = useScaleStore( state => state.changeType );
-	const typeValueStore = useScaleStore( state => state.type )
+	// Access to Store
+	const { changeType, type } = useScaleStore();
 
 	const listTypes = inputType.map( (input) => {
 		return <option key={input} value={input}>{ input }</option>
@@ -28,8 +27,8 @@ export const InputType:React.FC<inputProps> = ({ inputType, labelName }) => {
 			<select 
 				id={labelName} 
 				className="select-input"
-				value={ typeValueStore }
-				onChange={ e => handleTypeStore(e.target.value) }
+				value={ type }
+				onChange={ e => changeType(e.target.value) }
 			>
 				<option disabled value={"No value"}>-- Select type --</option>
 				{ listTypes }
