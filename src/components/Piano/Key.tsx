@@ -1,20 +1,31 @@
 import clsx from "clsx"
+import { useScaleStore } from "../../store/scaleStore"
+import { isNoteInScale } from "../../helpers/isNoteInScale";
+
 
 interface PrompDataKey {
-	note: string,
-	// isPlaying: boolean
+	noteKey: string,
 }
 
-export const KeyPiano: React.FC<PrompDataKey> = ({ note }) => {
+export const KeyPiano: React.FC<PrompDataKey> = ({ noteKey }) => {
+	const { note, modality, type } = useScaleStore();
+	const noteInScale = isNoteInScale( note, modality, type, noteKey );
 
 	return (
 		<div 
-			className={ clsx({
-				"white-key" : note.length <= 2,
-				"black-key" : note.length > 2,
-				})
+			className={ clsx(
+				{
+					"white-key" : noteKey.length <= 2,
+					"black-key" : noteKey.length > 2,
+				},
+				{
+					/* Add 4 like a string to compare with noteKey */
+					"piano-key-selected": noteKey === note + "4",
+					"piano-key-in-scale": noteInScale,
+				}
+			)
 			}
-			id={ note }
+			id={ noteKey }
 		>
 			<div 
 				className={ clsx(
@@ -23,7 +34,7 @@ export const KeyPiano: React.FC<PrompDataKey> = ({ note }) => {
 				)
 			}>
 				{/* Show notes in white keys but not in black keys */}
-				{ note.length <= 2 ? note : null }
+				{ noteKey.length <= 2 ? noteKey : null }
 			</div>
 		</div>
 	)
