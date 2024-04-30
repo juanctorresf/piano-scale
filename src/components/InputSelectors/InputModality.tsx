@@ -8,13 +8,12 @@ interface inputProps {
 export const InputModality:React.FC<inputProps> = ({ inputModality, labelName }) => {
 
 	// Store
-	const handleModalityStore = useScaleStore( state => state.changeModality );
+	const { changeModality, changeType } = useScaleStore();
 	const modalityValueStore = useScaleStore( state => state.modality )
-	const handleTypeStore = useScaleStore( state => state.changeType );
 
 	const handleModalityType = (e: React.ChangeEvent<HTMLSelectElement>) => {
-		handleModalityStore( e.target.value );
-		e.target.value === "Minor" ? handleTypeStore("Harmonic") : handleTypeStore("Ionian");
+		changeModality( e.target.value );
+		e.target.value === "Minor" ? changeType("Natural") : changeType("Ionian");
 	}
 
 	const listModalities = inputModality.map( (input) => {
