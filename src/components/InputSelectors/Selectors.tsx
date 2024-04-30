@@ -16,7 +16,7 @@ export const Selectors = () => {
                 "lg:flex-row lg:mx-auto"
             )
         }>
-            <InputNote inputNote={ notes } labelName="Tone"/>
+            <InputNote inputNote={ notes } labelName="Note"/>
             <InputModality inputModality={ modality } labelName="Modality" /> 
             { modalityStore === "Major" && <InputType inputType={ typeMajors } labelName="Type"/> }
             { modalityStore === "Minor" && <InputType inputType={ typeMinors } labelName="Type"/> }
