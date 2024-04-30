@@ -1,5 +1,5 @@
 const cMajorIonian: string[] = [ "C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5" ];
-const cSharpMajorIonian: string[] = [ "C#4", "D#4", "F", "F#4", "G#4", "A#4", "C5", "C#5" ];
+const cSharpMajorIonian: string[] = [ "C#4", "D#4", "F4", "F#4", "G#4", "A#4", "C5", "C#5" ];
 const dMajorIonian: string[] = [ "D4", "E4", "F#4", "G4", "A4", "B4", "C#5", "D5" ];
 const dSharpMajorIonian: string[] = [ "D#4", "F4", "G4", "G#4", "A#4", "C5", "D5", "D#5" ];
 const eMajorIonian: string[] = [ "E4", "F#4", "G#4", "A4", "B4", "C#5", "D#5", "E5" ];
