@@ -12,12 +12,12 @@ import {
     gMajorIonian,
     gSharpMajorIonian} 
 from "../global/ScaleMajor"
+import { aMinorNatural, aSharpMinorNatural, bMinorNatural, cMinorNatural, cSharpMinorNatural, dMinorNatural, dSharpMinorNatural, eMinorNatural, fMinorNatural, fSharpMinorNatural, gMinorNatural, gSharpMinorNatural } from "../global/ScaleMinor";
 
 enum mode {
     major= "Major",
     minor= "Minor"
 }
-
 
 function isNoteInScale( 
     noteSelected: string, 
@@ -25,7 +25,7 @@ function isNoteInScale(
     type: string, 
     noteKey:string 
 ): boolean | undefined {
-    // Chords Major
+    // ---------- Chords Major ---------------
     if( noteSelected === "C" && modality === mode.major && type === "Ionian" ) {
         return cMajorIonian.includes(noteKey);
     } else 
@@ -61,8 +61,44 @@ function isNoteInScale(
     } else
     if( noteSelected === "B" && modality === mode.major && type === "Ionian" ) {
         return bMajorIonian.includes(noteKey)
-    }
-    else {
+    } else
+    // ---------- Add Minor Chords -------------
+    if( noteSelected === "C" && modality === mode.minor && type === "Natural" ) {
+        return cMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "C#" && modality === mode.minor && type === "Natural" ) {
+        return cSharpMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "D" && modality === mode.minor && type === "Natural" ) {
+        return dMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "D#" && modality === mode.minor && type === "Natural" ) {
+        return dSharpMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "E" && modality === mode.minor && type === "Natural" ) {
+        return eMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "F" && modality === mode.minor && type === "Natural" ) {
+        return fMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "F#" && modality === mode.minor && type === "Natural" ) {
+        return fSharpMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "G" && modality === mode.minor && type === "Natural" ) {
+        return gMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "G#" && modality === mode.minor && type === "Natural" ) {
+        return gSharpMinorNatural.includes(noteKey)
+    } else
+    if( noteSelected === "A" && modality === mode.minor && type === "Natural" ) {
+        return aMinorNatural.includes(noteKey)
+    } else 
+    if( noteSelected === "A#" && modality === mode.minor && type === "Natural" ) {
+        return aSharpMinorNatural.includes(noteKey)
+    } else
+    if( noteSelected === "B" && modality === mode.minor && type === "Natural" ) {
+        return bMinorNatural.includes(noteKey)
+    } else {
         return undefined
     }
 }
