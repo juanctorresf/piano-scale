@@ -27,7 +27,7 @@ export default {
             '6xl': '5rem'
         },
         fontFamily: {
-            body: ["Helvetica", "sans-serif"]
+            body: ["sans-serif"]
         },
         backgroundImage: {
         'hero-image-android': "url('./src/assets/shape-android.svg')",
