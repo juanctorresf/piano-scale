@@ -8,7 +8,7 @@ export const Header = () => {
                 "md:text-6xl md:pt-45"
             )}
         >
-            MusicScale
+            Piano Scale
         </h1>
     )
 }
