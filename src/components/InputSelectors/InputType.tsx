@@ -19,7 +19,7 @@ export const InputType:React.FC<inputProps> = ({ inputType, labelName }) => {
 		<div className="flex flex-col items-center w-11/12 mb-7">
 			<label 
 				htmlFor={labelName} 
-				className="block mb-2 font-bold text-left uppercase text-gray-10"
+				className="label-name"
 			>
 				{ labelName }
 			</label>
