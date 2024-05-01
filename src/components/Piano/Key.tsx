@@ -29,8 +29,8 @@ export const KeyPiano: React.FC<PrompDataKey> = ({ noteKey }) => {
 		>
 			<div 
 				className={ clsx(
-					"relative mt-20 text-sm text-black uppercase",
-					"lg:text-base lg:mt-44"
+					"relative mt-20 text-sm dark:text-white uppercase",
+					"lg:text-base lg:mt-44 lg:dark:text-black md:dark:text-black md:mt-24"
 				)
 			}>
 				{/* Show notes in white keys but not in black keys */}
