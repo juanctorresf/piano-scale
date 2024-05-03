@@ -39,12 +39,16 @@
     }
 
     .select-input {
-        @apply block w-full py-4 pl-3 font-semibold leading-5 transition border-2 rounded-md border-slate-500 dark:border-slate-800 text-sm-2 max-w-80;
+        @apply block w-full py-4 pl-3 font-semibold leading-5 transition border-2 rounded-md shadow-lg border-slate-500 dark:border-slate-800 text-sm-2 max-w-80;
         @apply hover:border-slate-800 dark:hover:border-slate-950;
         @apply lg:hover:cursor-pointer;
     }
 
     .label-name {
         @apply block mb-2 font-bold text-left uppercase text-gray-10 dark:text-slate-100;
+    }
+
+    .text-shadow-header {
+        text-shadow: 1px -1px 7px rgba(0,0,0,0.6);
     }
 }
