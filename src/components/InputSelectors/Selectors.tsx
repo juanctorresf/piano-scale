@@ -3,7 +3,7 @@ import { modality, notes, typeMajors, typeMinors } from "../../global/ScaleInfo"
 import { InputModality } from "./InputModality"
 import { InputNote } from "./InputNote"
 import { InputType } from "./InputType"
-import { useScaleStore } from "../../store/scaleStore"
+import { useScaleStore } from "../../states/scaleStore"
 
 
 export const Selectors = () => {

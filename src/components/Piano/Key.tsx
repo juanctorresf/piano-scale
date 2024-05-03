@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useScaleStore } from "../../store/scaleStore"
+import { useScaleStore } from "../../states/scaleStore"
 import { isNoteInScale } from "../../helpers/isNoteInScale";
 
 
