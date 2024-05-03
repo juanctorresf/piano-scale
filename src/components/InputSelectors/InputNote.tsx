@@ -17,7 +17,7 @@ export const InputNote:React.FC<inputProps> = ({ inputNote, labelName }) => {
 		<div className="flex flex-col items-center w-11/12 mb-7">
 			<label 
 				htmlFor={labelName} 
-				className="label-name"
+				className="label-name text-shadow-header"
 			>
 				{ labelName }
 			</label>
