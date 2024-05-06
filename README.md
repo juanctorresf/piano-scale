@@ -2,7 +2,7 @@
 
 Piano Scale es una aplicación desarrollada utilizando React con TypeScript y Tailwind CSS, junto con Zustand para el manejo del estado. Esta aplicación tiene como objetivo proporcionar una herramienta interactiva para visualizar diferentes escalas musicales en el piano, permitiendo a los usuarios explorar diversas combinaciones de notas, modalidades y tipos de escalas.
 
-[Ver Demo](https://melodic-sopapillas-6cf744.netlify.app/)
+[Ver Demo](https://piano-scale.netlify.app/)
 
 ## Instalación
 
