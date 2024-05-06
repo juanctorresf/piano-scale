@@ -8,7 +8,7 @@ export const Footer = () => {
             <p
                 className={ clsx( 
                     "mt-20 text-center text-black dark:text-white",
-                    "lg:mt-40"
+                    "lg:mt-20"
                 )}
             >Made by <a 
                     href="https://www.linkedin.com/in/juan-torres-devv/" 
