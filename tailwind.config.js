@@ -31,7 +31,7 @@ export default {
             body: ["sans-serif"]
         },
         backgroundImage: {
-        'svg-1': "url('./src/assets/bg1-wave.svg')",
+        'svg-1': "url('./assets/bg1-wave.svg')",
         },
     },
     plugins: [],
