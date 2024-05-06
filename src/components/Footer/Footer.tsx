@@ -7,7 +7,7 @@ export const Footer = () => {
         <>
             <p
                 className={ clsx( 
-                    "mt-20 text-center text-black dark:text-white",
+                    "mt-20 text-center text-black dark:text-white text-shadow-header",
                     "lg:mt-20"
                 )}
             >Made by <a 
