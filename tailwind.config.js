@@ -13,6 +13,7 @@ export default {
             },
             colors: {
             'gray-10': '#181818',
+            'white-10': '#F4F0E6',
             },
         },
         fontSize: {
@@ -30,9 +31,7 @@ export default {
             body: ["sans-serif"]
         },
         backgroundImage: {
-        'hero-image-android': "url('./src/assets/shape-android.svg')",
-        'hero-image-tablet': "url('./src/assets/shape-tablet.svg')",
-        'hero-image-desktop': "url('./src/assets/shape-desktop.svg')"
+        'svg-1': "url('./src/assets/bg1-wave.svg')",
         },
     },
     plugins: [],
