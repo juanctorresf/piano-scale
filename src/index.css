@@ -43,12 +43,11 @@
         @apply hover:border-slate-800 dark:hover:border-slate-950;
         @apply lg:hover:cursor-pointer;
     }
-
     .label-name {
         @apply block mb-2 font-bold text-left uppercase text-gray-10 dark:text-slate-100;
     }
 
     .text-shadow-header {
-        text-shadow: 1px -1px 7px rgba(0,0,0,0.6);
+        text-shadow: 1px -1px 7px rgba(0,0,0,0.2);
     }
 }
